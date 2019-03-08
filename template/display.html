@@ -1,0 +1,53 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+<center>
+<h1>DATACODE</h1>
+
+<h2>All User Details</h2>
+
+<table >
+    <th>TollID</th>
+    <th>Tollcmp NAme</th>
+    <th>Address</th>
+
+    {% for item in p %}
+    <tr  >
+        <td  bgcolor="orange">{{ item.tollid }}</td>
+        <td > {{ item.tollcmpname }}</td>
+        <td bgcolor="orange"> {{ item.address }}</td>
+    </tr>
+
+    <tr>
+    <td colspan="3" class="divider"><hr/></td>
+</tr>
+    {% endfor %}
+</table>
+
+<table >
+    <th>Vehicle No</th>
+    <th>V Type</th>
+    <th>NAme</th>
+
+    {% for item in p1 %}
+    <tr  >
+        <td  bgcolor="orange">{{ item.vehicleno }}</td>
+        <td > {{ item.vtype }}</td>
+        <td bgcolor="orange"> {{ item.taxpayername }}</td>
+    </tr>
+
+    <tr>
+    <td colspan="3" class="divider"><hr/></td>
+</tr>
+    {% endfor %}
+</table>
+
+</center>
+</body>
+
+</html>
